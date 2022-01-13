@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://www.duronto.tv/image_gallery_en -->
+<html class="no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">      
+        <title>Duronto TV</title>
+        <link rel="icon" href="http://www.duronto.tv/global/front/img/f_logo.png" type="image/gif" sizes="16x16">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- font libs -->
+        <link href="./Duronto TV_files/css" rel="stylesheet">
+        <link href="./Duronto TV_files/css(1)" rel="stylesheet">
+        <link href="./Duronto TV_files/css(2)" rel="stylesheet">
+        <link rel="stylesheet" href="./Duronto TV_files/font-awesome.min.css">
+       <!--  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'> -->
+       <!--  <link href="https://fonts.googleapis.com/css?family=Atma:500&display=swap" rel="stylesheet"> -->
+       <link href="./Duronto TV_files/css(3)" rel="stylesheet">
+        
+       <!--  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800&amp;amp;subset=latin,latin-ext"> -->
+       <link rel="stylesheet" href="./Duronto TV_files/bootstrap-dropdownhover.min.css">
+         
+        <link rel="stylesheet" href="./Duronto TV_files/animate.css">
+        <link rel="stylesheet" href="./Duronto TV_files/prettyPhoto.css">
+        <link rel="stylesheet" href="./Duronto TV_files/slick.css">
+        <link rel="stylesheet" href="./Duronto TV_files/settings.css">
+        <link href="./Duronto TV_files/style_en.css" rel="stylesheet" type="text/css">
+
+        <!-- <link href="http://www.duronto.tv/global/front/css/bootstrap.min.css" rel="stylesheet" type="text/css"> -->
+
+        <link href="./Duronto TV_files/font-awesome.min(1).css" rel="stylesheet" type="text/css">
+        <link href="./Duronto TV_files/bootstrap.css" rel="stylesheet" type="text/css">
+        <link href="./Duronto TV_files/jquery.fancybox.css" rel="stylesheet" type="text/css">
+
+        <link rel="stylesheet" type="text/css" href="./Duronto TV_files/jquery.bxslider.css">
+        <link rel="stylesheet" type="text/css" href="./Duronto TV_files/layerslider.css">
+
+        <!-- Theme styles START -->
+        <link href="./Duronto TV_files/style_salambd.css" rel="stylesheet" type="text/css">
+        <link href="./Duronto TV_files/style.css" rel="stylesheet" type="text/css">
+        <link href="./Duronto TV_files/style_responsive_en.css" rel="stylesheet" type="text/css">
+        <link href="./Duronto TV_files/custom.css" rel="stylesheet" type="text/css">
+        <!-- Slider Start -->
+        <script src="./Duronto TV_files/jquery-1.11.3.min.js.download" type="text/javascript" data-library="jquery" data-version="1.11.3"></script>
+        <script src="./Duronto TV_files/jssor.slider-22.0.7.mini.js.download" type="text/javascript" data-library="jssor.slider.mini" data-version="22.0.7"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+
+                var jssor_1_SlideoTransitions = [
+                    [{b:-1,d:1,o:-1},{b:0,d:1000,o:1}],
+                    [{b:1900,d:2000,x:-379,e:{x:7}}],
+                    [{b:1900,d:2000,x:-379,e:{x:7}}],
+                    [{b:-1,d:1,o:-1,r:288,sX:9,sY:9},{b:1000,d:900,x:-1400,y:-660,o:1,r:-288,sX:-9,sY:-9,e:{r:6}},{b:1900,d:1600,x:-200,o:-1,e:{x:16}}]
+                ];
+
+                var jssor_1_options = {
+                    $AutoPlay: true,
+                    $SlideDuration: 800,
+                    $SlideEasing: $Jease$.$OutQuint,
+                    $CaptionSliderOptions: {
+                        $Class: $JssorCaptionSlideo$,
+                        $Transitions: jssor_1_SlideoTransitions
+                    },
+                    $ArrowNavigatorOptions: {
+                        $Class: $JssorArrowNavigator$
+                    },
+                    $BulletNavigatorOptions: {
+                        $Class: $JssorBulletNavigator$
+                    }
+                };
+
+                var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+                /*responsive code begin*/
+                /*you can remove responsive code if you don't want the slider scales while window resizing*/
+                function ScaleSlider() {
+                    var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                    if (refSize) {
+                        refSize = Math.min(refSize, 1920);
+                        jssor_1_slider.$ScaleWidth(refSize);
+                    }
+                    else {
+                        window.setTimeout(ScaleSlider, 30);
+                    }
+                }
+                ScaleSlider();
+                $(window).bind("load", ScaleSlider);
+                $(window).bind("resize", ScaleSlider);
+                $(window).bind("orientationchange", ScaleSlider);
+                /*responsive code end*/
+            });
+
+
+
+        </script>
+
+        
+        <style>
+
+           .body{
+              font-family: 'Architects Daughter', cursive!important;
+           }
+
+
+            .jssorb05 {
+                position: absolute;
+            }
+            .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 16px;
+                height: 16px;
+                background: url('http://www.duronto.tv/global/front/img/slider/b05.png') no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .jssorb05 div { background-position: -7px -7px; }
+            .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+            .jssorb05 .av { background-position: -67px -7px; }
+            .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+
+            .jssora22l, .jssora22r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 40px;
+                height: 58px;
+                cursor: pointer;
+                background: url('http://www.duronto.tv/global/front/img/slider/a22.png') center center no-repeat;
+                overflow: hidden;
+            }
+            .jssora22l { background-position: -10px -31px; }
+            .jssora22r { background-position: -70px -31px; }
+            .jssora22l:hover { background-position: -130px -31px; }
+            .jssora22r:hover { background-position: -190px -31px; }
+            .jssora22l.jssora22ldn { background-position: -250px -31px; }
+            .jssora22r.jssora22rdn { background-position: -310px -31px; }
+            .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
+            .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
+        </style>
+
+        <!-- demo page styles -->
+        <link href="./Duronto TV_files/jplist.demo-pages.min.css" rel="stylesheet" type="text/css">
+                
+        <!-- jQuery lib -->     
+        <script src="./Duronto TV_files/jquery-1.11.1.min.js.download"></script>
+        
+        <!-- jPList core js and css  -->
+        <link href="./Duronto TV_files/jplist.core.min.css" rel="stylesheet" type="text/css">
+        <script src="./Duronto TV_files/jplist.core.min.js.download"></script>
+
+        <!-- jplist pagination bundle -->
+        <script src="./Duronto TV_files/jplist.pagination-bundle.min.js.download"></script>
+        <link href="./Duronto TV_files/jplist.pagination-bundle.min.css" rel="stylesheet" type="text/css">
+        
+        <!-- jPList start -->
+        <script>
+        $('document').ready(function(){ 
+                
+            $('#demo').jplist({             
+                itemsBox: '.list' 
+                ,itemPath: '.list-item' 
+                ,panelPath: '.jplist-panel' 
+            });
+        });
+        </script>
+
+    <script type="text/javascript" charset="UTF-8" src="./Duronto TV_files/common.js.download"></script><script type="text/javascript" charset="UTF-8" src="./Duronto TV_files/util.js.download"></script></head>
+    <body>
+
+			<!-- login box End -->
+
+			<!-- Header Start -->
+			<!-- END TOP BAR -->    <!-- BEGIN HEADER -->
+            <div class="logoheader" style="background-image: url(http://www.duronto.tv/global/admin/images/setting/header2.png); height: 150px; ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12  col-xs-12 additional-nav" style="padding: 0; margin: 0;font-family: sans-serif!important;">
+                            <ul class="list-unstyled list-inline pull-right" style=" margin: -32px 0 0px 0; padding: 0; font-size: 40px; color: black"> 
+
+                               <li>  <a href="https://www.youtube.com/durontotvbangla" title="Youtube" width="42px" target="_blank"><i class="fa fa-youtube-square" style="padding: 0; margin: 0; margin: 0 -25px 0px 0;"></i></a></li>
+                                <li>  <a href="https://www.facebook.com/durontotvBD/" title="Facebook" width="42px" target="_blank"><i class="fa fa-facebook-square" style="padding: 0; margin: 0; margin: 0 -15px 0px 0;"></i></a></li> 
+                                <li style="padding: 0; margin: -10px 0 0 0;"></li>
+                                <li><a href="http://www.duronto.tv/"><img src="./Duronto TV_files/bd.png" width="42px" height="25px" title="বাংলা" class="language" style="margin-top: -15px; margin-right: -8px;"></a></li>
+                               
+                                <li><a href="http://www.duronto.tv/en"><img src="./Duronto TV_files/england.png" width="37px" height="25px" title="English" class="language" style="margin-top: -15px;"></a></li>
+                               
+                            </ul>
+                        </div>
+                        
+                        <!-- BEGIN CART -->
+                       
+                    </div>
+                    <!-- END CART -->
+
+                </div>
+            </div>
+
+
+            <!-- BEGIN HEADER -->
+            <div role="navigation" class="navbar header no-margin">
+                <div class="container">
+                    <div class="pull-right" style="margin-top: -90px; margin-right: -15px;">
+                        <a href="http://www.duronto.tv/en">
+                        <img src="./Duronto TV_files/logo2.png">
+                        </a>
+                    </div>
+
+                    <div class="navbar-header">
+                        <!-- BEGIN RESPONSIVE MENU TOGGLER -->
+                        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                            <i class="fa fa-bars"></i>
+                             Menu
+
+                        </button>
+                        <!-- END RESPONSIVE MENU TOGGLER -->
+
+                    </div>
+                    <!-- BEGIN NAVIGATION -->
+                     <div class="collapse navbar-collapse mega-menu pull-left" style="padding: 0; margin-left: -15px;">
+                        <ul class="nav navbar-nav">
+
+                            <li class="title_button">  <a href="http://www.duronto.tv/en"> Home </a> </li>
+                           
+                            <li class="dropdown title_button">
+                                  
+                                <a class="dropdown-toggle" data-delay="0" data-toggle="dropdown" data-close-others="false" data-target="#" href="http://www.duronto.tv/all_category">
+                                    Programmes                                    <i class="fa fa-caret-down"></i>
+                                </a> 
+                                <ul class="dropdown-menu">
+                                     <li><a href="http://www.duronto.tv/all_category_en">All</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/category_page_en/7/Cartoon">Cartoon</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/category_page_en/16/Learning">Learning</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/category_page_en/15/Flim">Flim</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/category_page_en/14/Awareness">Awareness</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/category_page_en/13/Muktijuddho">Muktijuddho</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/category_page_en/12/Fun">Fun</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/category_page_en/11/Travel">Travel</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/category_page_en/10/Science">Science</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/category_page_en/9/Family">Family</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/category_page_en/8/Drama">Drama</a></li><li>
+                                                                                                           
+                                </li></ul>
+                            </li>
+                             <li class="title_button"><a href="http://www.duronto.tv/schedule_en">Schedule </a></li>
+                            <li class="dropdown title_button">
+                                  
+                                <a class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="false" data-target="#" href="http://www.duronto.tv/image_gallery_en#">
+                                  Gallery                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                             
+                                <ul class="dropdown-menu">
+                                    <li><a href="http://www.duronto.tv/image_gallery_en">Image</a></li>
+                                    <li><a href="http://www.duronto.tv/video_gallery_en">Video</a></li>                           
+                                </ul>
+                            </li>
+
+                            <li class="dropdown title_button">
+                                  
+                                <a class="dropdown-toggle" data-toggle="dropdown" data-delay="0" data-close-others="false" data-target="#" href="http://www.duronto.tv/categories/details/kawmi-pattho-kitab.html">
+                                   Duronto shishu                                    <k class="fa fa-caret-down"></k>
+                                </a>
+                             
+                                <ul class="dropdown-menu">
+                                   <li><a href="http://www.duronto.tv/all_filler_en">All</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/filler_en/20/Jokes">Jokes</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/filler_en/18/Tales">Tales</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/filler_en/19/Fillers">Fillers</a></li><li>
+                                                                           
+                                        </li><li><a href="http://www.duronto.tv/filler_en/17/Rhymes">Rhymes</a></li><li>
+                                                                    </li></ul>
+                            </li>
+                            <li class="title_button">  <a href="http://www.duronto.tv/news_en">News</a> </li>
+                            <li class="title_button">  <a href="http://www.duronto.tv/contact_en">Contact</a> </li>
+
+
+
+                         
+                           
+
+                        </ul>
+                    </div>
+                    <!-- END NAVIGATION -->
+                    
+                </div>
+            </div>
+            <!-- END HEADER -->
+
+			<!-- Header End -->
+			
+			<!-- Content Start -->
+			<div id="contentWrapper" style="min-height: 667px;">
+				
+				                <div class="header_content5">            
+                    <div class="container">
+                      <!-- Icons -->
+                      <div class="row">
+                        <!-------------- row 1 -------------->
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                           
+                            <h1>Gallery</h1>
+                            <h3>      Home &gt; Gallery &gt; Image    </h3>
+                           
+                        </div>
+                       
+                      </div>
+                    </div>
+                </div>
+
+                     <div class="container">
+                          <div class="row">                           
+                                        
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                  <div id="demo" class="jplist" style="margin: -20px 0 50px 0">
+                                                     <div class="list  text-shadow"> 
+
+                                                                                                                       
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                                                                                  
+
+
+
+
+
+                                                 
+                                    
+                                                                 
+                                                
+
+
+
+
+                                            <div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Teenage_Mutant_Ninja_Turtles1920X1080.jpg" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Teenage_Mutant_Ninja_Turtles1920X1080.jpg" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Banan_Mane_Speling_1920x1080.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Banan_Mane_Speling_1920x1080.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/the_eng_club.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/the_eng_club.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Nayan_Tara_HD.jpg" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Nayan_Tara_HD.jpg" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/litall_chamas.jpg" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/litall_chamas.jpg" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/rasty_rivits1.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/rasty_rivits1.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Gunijon_title_1920x1080_00744.jpg" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Gunijon_title_1920x1080_00744.jpg" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Dora-the-Explorer.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Dora-the-Explorer.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/franklin.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/franklin.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/TOP_Logo_Bangla.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/TOP_Logo_Bangla.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/role_pole.jpg" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/role_pole.jpg" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/babar1.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/babar1.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/art_room01.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/art_room01.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Amar_sonar_bangla_1920_1080.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Amar_sonar_bangla_1920_1080.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Backyardigans_Opening_Title.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Backyardigans_Opening_Title.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Adbhuture_Boighor_Title.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Adbhuture_Boighor_Title.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Nella_The_Princess_Knight_Opening_Title_Textlees1.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Nella_The_Princess_Knight_Opening_Title_Textlees1.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Kung_Fu_Panda_2.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Kung_Fu_Panda_2.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/The_Penguins_of_Madagascar_2.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/The_Penguins_of_Madagascar_2.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Kattush_Kuttush_Title.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Kattush_Kuttush_Title.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/LAL_KOHINOOR_05_copy.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/LAL_KOHINOOR_05_copy.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Vulostain_Title_page.jpg" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Vulostain_Title_page.jpg" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/ZIGBY.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/ZIGBY.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div><div class="list-item col-md-4  col-sm-6 col-xs-12" style="position: relative; height: 290px;">                                                                                  
+                                                                        <div class="container5">
+                                                                            <a href="./Duronto TV_files/Martin_morning.png" class="fx zoom animated undefined" data-gal="prettyPhoto[pp_gal]" title="Project Title">
+                                                                                <div class="overlay">                                                                    
+                                                                                    <b class="fa fa-search"></b>                                                                         
+                                                                                </div>
+                                                                                <img alt="" src="./Duronto TV_files/Martin_morning.png" style="border:10px solid #fee6b4; border-radius: 10px!important;" width="95%">
+                                                                            </a>
+                                                                        </div>
+                                                                    
+                                                                                                                    
+                                                                    
+                                                                 </div></div>
+                                         
+
+
+
+                                        <div style="clear: both;">
+                                            
+                                        </div>
+                                        
+
+
+                                 
+
+                                        <!-- no results -->
+                                    <div class="jplist-no-results text-shadow align-center jplist-hidden">
+                                        <p>No results found</p>
+                                    </div>
+                                    <!-- ios button: show/hide panel -->
+                                    <div class="jplist-ios-button">
+                                        <i class="fa fa-sort"></i>
+                                        More pages
+                                    </div>
+
+                                    <!-- panel -->
+                                    <div class="jplist-panel  panel-top">
+
+                                        <div class="jplist-label" data-type="Page {current} of {pages}" data-control-type="pagination-info" data-control-name="paging" data-control-action="paging">Page 1 of 4</div>
+
+                                        <div class="jplist-pagination" data-control-type="pagination" data-control-name="paging" data-control-action="paging" data-items-per-page="24"><div class="jplist-pagingprev jplist-hidden" data-type="pagingprev"><button type="button" class="jplist-first" data-number="0" data-type="first" title="" data-active="true">«</button><button type="button" class="jplist-prev" data-type="prev" title="" data-number="0">‹</button></div><div class="jplist-pagingmid" data-type="pagingmid"><div class="jplist-pagesbox" data-type="pagesbox"><button type="button" data-type="page" class="jplist-current" data-active="true" data-number="0" title="">1</button> <button type="button" data-type="page" data-number="1" title="">2</button> <button type="button" data-type="page" data-number="2" title="">3</button> <button type="button" data-type="page" data-number="3" title="">4</button> </div></div><div class="jplist-pagingnext" data-type="pagingnext"><button type="button" class="jplist-next" data-type="next" title="" data-number="1">›</button><button type="button" class="jplist-last" data-type="last" title="" data-number="3">»</button></div></div>
+
+                                    </div>
+                                                
+
+                                </div>
+                    </div>
+        </div>
+
+
+   </div>
+                                </div>
+                                        
+                                
+                            </div>
+                   	
+			
+			<!-- Content End -->
+			
+			<!-- Footer start -->
+		    
+
+<div class="logoheader" style="background-image: url(http://www.duronto.tv/global/admin/images/setting/footer.png); height: 150px;">
+                <div class="container">
+                    <div class="row">
+                        <div style="float: right; font-size: 36px;">
+                            
+                        </div>
+                        
+                        <!-- BEGIN CART -->
+                       
+                    </div>
+                    <!-- END CART -->
+
+                </div>
+            </div>
+
+
+            <!-- BEGIN FOOTER -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- BEGIN COPYRIGHT -->
+                        <div class="col-md-6 col-sm-6">
+                       <p style="padding: 15px 0 10px 0; font-size: 20px;"> Copyright @2019 | Duronto TV | Privacy Policy</p>
+                        </div>
+                        <!-- END COPYRIGHT -->
+                        <!-- BEGIN PAYMENTS -->
+                        <div class="col-md-6 col-sm-6 modal_dp">
+                           
+                              
+                              <p style="padding: 15px 0 10px 0; font-size: 20px; cursor: -webkit-grab; cursor: grab;" data-toggle="modal" data-target="#myModal">Downlink Parameter</p>
+
+                              <!-- Modal -->
+                              <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+                                
+                                  <!-- Modal content-->
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <button type="button" class="close" data-dismiss="modal">×</button>
+                                      <h4 class="modal-title"></h4>
+                                    </div>
+                                    <div class="modal-body">
+                                      <img src="./Duronto TV_files/dp.png">
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                  
+                                </div>
+                       
+                              
+                            </div>
+                        </div>
+                        <!-- END PAYMENTS -->
+                    </div>
+                </div>
+            </div>		    <!-- Footer end -->
+		    
+			<!-- Back to top Link -->
+			<script src="./Duronto TV_files/jquery-migrate-1.2.1.min.js.download" type="text/javascript"></script>
+    <script src="./Duronto TV_files/bootstrap.min.js.download" type="text/javascript"></script>
+    <script type="text/javascript" src="./Duronto TV_files/back-to-top.js.download"></script>
+    <script type="text/javascript" src="./Duronto TV_files/jquery.fancybox.pack.js.download"></script>
+
+    <script type="text/javascript" src="./Duronto TV_files/jquery.bxslider.min.js.download"></script>
+    <script type="text/javascript" src="./Duronto TV_files/bootstrap.touchspin.js.download"></script>
+    <script type="text/javascript" src="./Duronto TV_files/jquery-easing-1.3.js.download"></script>
+    <script type="text/javascript" src="./Duronto TV_files/jquery-transit-modified.js.download"></script>
+    <script type="text/javascript" src="./Duronto TV_files/layerslider.transitions.js.download"></script>
+    <script type="text/javascript" src="./Duronto TV_files/layerslider.kreaturamedia.jquery.js.download"></script>
+    <script type="text/javascript" src="./Duronto TV_files/app.js.download"></script>
+    <script type="text/javascript" src="./Duronto TV_files/index.js.download"></script>
+    <script type="text/javascript" src="./Duronto TV_files/salambd.js.download"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        jQuery(document).ready(function () {
+            App.init();
+            App.initBxSlider();
+            Index.initLayerSlider();
+        });
+        //]]>
+    </script>
+
+ <script type="text/javascript" src="./Duronto TV_files/bootstrap-dropdownhover.js.download"></script>
+        
+        <!-- Waypoints script -->
+        <script type="text/javascript" src="./Duronto TV_files/waypoints.min.js.download"></script>
+        
+        <!-- SLIDER REVOLUTION SCRIPTS  -->
+        <script type="text/javascript" src="./Duronto TV_files/jquery.themepunch.tools.min.js.download"></script>
+        <script type="text/javascript" src="./Duronto TV_files/jquery.themepunch.revolution.min.js.download"></script>
+        
+        <!-- Animate numbers increment -->
+        <script type="text/javascript" src="./Duronto TV_files/jquery.animateNumber.min.js.download"></script>
+        
+        <!-- slick slider carousel -->
+        <script type="text/javascript" src="./Duronto TV_files/slick.min.js.download"></script>
+        
+        <!-- Animate numbers increment -->
+        <script type="text/javascript" src="./Duronto TV_files/jquery.easypiechart.min.js.download"></script>
+        
+        <!-- PrettyPhoto script -->
+        <script type="text/javascript" src="./Duronto TV_files/jquery.prettyPhoto.js.download"></script>
+        
+        <!-- Share post plugin script -->
+        <script type="text/javascript" src="./Duronto TV_files/jquery.sharrre.min.js.download"></script>
+        
+        <!-- Product images zoom plugin -->
+        <script type="text/javascript" src="./Duronto TV_files/jquery.elevateZoom-3.0.8.min.js.download"></script>
+        
+        <!-- Input placeholder plugin -->
+        <script type="text/javascript" src="./Duronto TV_files/jquery.placeholder.js.download"></script>
+                
+        <!-- Tweeter API plugin -->
+        <script type="text/javascript" src="./Duronto TV_files/twitterfeed.js.download"></script>
+        
+        <!-- Flickr API plugin -->
+        <script type="text/javascript" src="./Duronto TV_files/jflickrfeed.min.js.download"></script>
+
+        <!-- MailChimp plugin -->
+        <script type="text/javascript" src="./Duronto TV_files/mailChimp.js.download"></script>
+
+        <!-- NiceScroll plugin -->
+        <script type="text/javascript" src="./Duronto TV_files/jquery.nicescroll.min.js.download"></script>
+        
+        <!-- general script file -->
+        <script type="text/javascript" src="./Duronto TV_files/script.js.download"></script><div id="ascrail2000" class="nicescroll-rails nicescroll-rails-vr" style="width: 0px; z-index: auto; background: transparent; cursor: default; position: fixed; top: 0px; height: 100%; right: 0px; touch-action: none; display: block; opacity: 0;"><div class="nicescroll-cursors" style="position: relative; top: 500px; float: right; width: 0px; height: 151px; background-color: transparent; border: 0px none transparent; background-clip: padding-box; border-radius: 0px; touch-action: none;"></div></div>
+
+
+
+        <!--  -->
+
+
+        <!----  Google map  javascript --->
+       <script type="text/javascript" src="./Duronto TV_files/js"></script>
+  
+<div id="topcontrol" title="Scroll Back to Top" style="position: fixed; bottom: 10px; right: 10px; opacity: 1; cursor: pointer;"><i class="fa fa-arrow-circle-o-up" style="width:40px; height:40px; font-size:48px;color:red"></i></div></body></html>

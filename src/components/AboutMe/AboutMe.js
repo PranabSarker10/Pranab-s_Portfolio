@@ -74,8 +74,8 @@ const AboutMe = () => {
                                     <p className="fw-bold my-0">Rajshahi University of Engineering and Technology (RUET)</p>
                                     <p>BS'c in Computer Science and Engineering (CSE) </p>
                                     <ul>
-                                        <li>Passing Year: 2019 </li>
-                                        <li>Result: First Class </li>
+                                        <li>Passing Year: 2018 </li>
+                                        <li>Result: First Class (3.00) </li>
                                     </ul>
                                 </div>
 
@@ -231,7 +231,7 @@ const AboutMe = () => {
 
                                 <div className="d-flex justify-content-between">
                                     <p className=""><b>1. Complete Web Development Course</b>/ Programming Hero</p>
-                                    <p className="">Jun 2021 - Dec 2021</p>
+                                    <p className="">1 July, 2021 - 23 November, 2021</p>
                                 </div>
 
                                 <div className="d-flex justify-content-between">
@@ -266,7 +266,7 @@ const AboutMe = () => {
 
                             <div className="col-md">
 
-                                <p className="float-end">16 August, 2021 – Presen</p>
+                                <p className="float-end">16 August, 2021 – Present</p>
                                 <p className="fw-bold my-0"> Software Quality Assurance Engineer ( Automation )</p>
                                 <p className="text-secondary">BJIT LIMITED | Plot No- 2740 and 2745 Pachkhola, Dhaka 1212</p>
                             </div>

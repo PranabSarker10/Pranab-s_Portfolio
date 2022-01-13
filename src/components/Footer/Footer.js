@@ -8,7 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 
 const Footer = () => {
 
-    const resumeUrl = 'https://drive.google.com/file/d/1GIP_G1_AamlOOgLEPibqeSUPAHW0W8iP/view?usp=sharing'
+    const resumeUrl = 'https://drive.google.com/file/d/1bAyn2_NjWJvyf8kduWOpplCh_4wzpxam/view?usp=sharing'
 
 
     return (
@@ -59,9 +59,9 @@ const Footer = () => {
                                 <h4 className="text-uppercase fw-bold">Social Links</h4>
 
                                 <div className="social-links mt-3">
-                                    <a href="https://www.linkedin.com/in/taibislamdipu/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
-                                    <a href="https://github.com/taibislamdipu" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
-                                    <a href="https://www.facebook.com/taibislamdipu/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
+                                    <a href="https://www.linkedin.com/in/pranab-sarker-a01657156/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin} /></a>
+                                    <a href="https://github.com/PranabSarker10" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faGithub} /></a>
+                                    <a href="https://www.facebook.com/pranab.sarker.33" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook} /></a>
 
                                 </div>
                             </div>
@@ -77,8 +77,8 @@ const Footer = () => {
                             <div className="col-12">
                                 <p>
                                     Site Code & designed by <a
-                                        href="https://github.com/taibislamdipu" target="_blank" rel="noreferrer" title="My GitHub Repo">
-                                        <span className="text-white cool-link">Taib Islam</span></a>
+                                        href="https://github.com/PranabSarker10" target="_blank" rel="noreferrer" title="My GitHub Repo">
+                                        <span className="text-white cool-link">Pranab Sarker</span></a>
                                 </p>
                             </div>
                         </div>

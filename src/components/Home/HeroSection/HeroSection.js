@@ -34,7 +34,7 @@ const HeroSection = () => {
                     </p>
 
                     <div>
-                        <a href="https://drive.google.com/file/d/1sC-7IieAgj4QWjTqfL7onzv0OKB2m8nO/view?usp=sharing" type="button" className="btn btnDwnResume me-2 mb-2 mb-md-0">
+                        <a href="https://drive.google.com/file/d/1bAyn2_NjWJvyf8kduWOpplCh_4wzpxam/view?usp=sharing" type="button" className="btn btnDwnResume me-2 mb-2 mb-md-0">
                             <FontAwesomeIcon icon={faCloudDownloadAlt} /> Download Resume
                         </a>
 

@@ -1,0 +1,67 @@
+var ContactUs=function(){return{init:function(){var map;$(document).ready(function(){map=new GMaps({div:'#map',lat:23.8220645,lng:90.3580048,});var marker=map.addMarker({lat:23.8220645,lng:90.3580048,title:'KitabGhor',infoWindow:{content:"<b>KitabGhor</b> J-17, Extension Pallabi, Mirpur, Dhaka-1216, Bangladesh"}});marker.infoWindow.open(map,marker);});}};}();function load_home_books(){var track_load=1;var loading=false;var total_groups=5
+$('#home_load').load('/home/home_categories/1',function(){track_load++;});$(window).scroll(function(){if($(window).scrollTop()>(parseInt($('#more_loads').offset().top-150))){if(track_load<=total_groups&&loading==false){loading=true;$('.animation_image').show();$.post('/home/home_categories/'+track_load,function(data){$('#home_load').append(data);$('.animation_image').hide();track_load++;loading=false;}).fail(function(xhr,ajaxOptions,thrownError){alert(thrownError);$('.animation_image').hide();loading=false;});}}});}
+function load_books(track_load){$('.animation_image').hide();$.ajax({url:'/home/home_categories/'+track_load,dataType:'html',success:function(data){$('#home_load').append(data);if(track_load<=5){inc=track_load+1;load_books(inc);}}});}
+function load_home_books(){var track_load=1;var loading=false;var total_groups=5
+$('#home_load').load('/home/home_categories/1',function(){track_load++;load_books(track_load);});}
+function home_bx_slider(id){$(id).each(function(){var width=$(window).width();var slides;var slideMargin=parseInt($(this).attr("data-slide-margin"));var slideContainerWidth=$(this).closest('.bxslider-wrapper').width();var slideWidth;if(width<=480){slides=$(this).attr("data-slides-phone");}else if(width>480&&width<=992){slides=$(this).attr("data-slides-tablet");}else{slides=$(this).attr("data-slides-desktop");}
+slides=parseInt(slides);slideWidth=slideContainerWidth/slides;var slider=$(this).bxSlider({minSlides:slides,maxSlides:slides,slideWidth:slideWidth,slideMargin:slideMargin,moveSlides:5,responsive:true});});}
+function book_bundle_slider(id){$(id).each(function(){var width=$(window).width();var slides;var slideMargin=parseInt($(this).attr("data-slide-margin"));var slideContainerWidth=$(this).closest('.bxslider-wrapper').width();var slideWidth;if(width<=480){slides=$(this).attr("data-slides-phone");}else if(width>480&&width<=992){slides=$(this).attr("data-slides-tablet");}else{slides=$(this).attr("data-slides-desktop");}
+slides=parseInt(slides);slideWidth=slideContainerWidth/slides;var slider=$(this).bxSlider({minSlides:slides,maxSlides:slides,slideWidth:slideWidth,slideMargin:slideMargin,moveSlides:4,responsive:true});});}
+function load_home_section(section){var success=1;var xhr=null;if(xhr!=null){xhr.abort();xhr=null;alert('kabir');}
+if(xhr==null){xhr=$.ajax({type:"GET",cache:false,url:'/home/home_categories/'+section,dataType:"html",success:function(res){$('#home_load'+section).html(res);},error:function(xhr,ajaxOptions,thrownError){}});}}
+function search_publisher(){$("#search_publishers").addClass('spinner');var search_publishers=$("#search_publishers").val();if(search_publishers!=''){var xhr=null;if(xhr!=null){xhr.abort();xhr=null;}
+xhr=$.ajax({type:"POST",dataType:'html',url:"/publishers/search",data:{item:search_publishers},success:function(data){$('#search_publishers_container').html(data).show();$("#search_publishers").removeClass('spinner');}});}else{$('#search_writers_container').hide();$("#search_writer").removeClass('spinner');}}
+function search_writer(){$("#search_writer").addClass('spinner');var search_writer=$("#search_writer").val();if(search_writer!=''){var xhr=null;if(xhr!=null){xhr.abort();xhr=null;}
+xhr=$.ajax({type:"POST",dataType:'html',url:"/writers/search",data:{item:search_writer},success:function(data){$('#search_writers_container').html(data).show();$("#search_writer").removeClass('spinner');}});}else{$('#search_writers_container').hide();$("#search_writer").removeClass('spinner');}}
+function search_book_ajax(){$("#search_book").addClass('spinner');var search_book=$("#search_book").val();if(search_book!=''){var xhr=null;if(xhr!=null){xhr.abort();xhr=null;}
+xhr=$.ajax({type:"POST",dataType:'html',url:"/books/search",data:{item:search_book},success:function(data){$('#search_items_container').html(data).show();$("#search_book").removeClass('spinner');}});}else{$('#search_items_container').hide();$("#search_book").removeClass('spinner');}}
+function search_book_submit(){var search_book=$("#search_book").val();if(search_book==''){return false;}
+return true;}
+$('body').click(function(){$('#search_items_container').hide();$("#search_book").removeClass('spinner');$('#search_writers_container').hide();$("#search_writer").removeClass('spinner');$('#search_publishers_container').hide();$("#search_publishers").removeClass('spinner');});function show_book_from_search(url_name){location.href='/books/'+url_name+'.html';}
+function register(type){error=0;$(".has-error").each(function(index,element){$(this).removeClass('has-error');});$('#memeber_register_error').addClass('hidden')
+if($('#MemberName').val()==''){$('#MemberName').parent().parent().addClass('has-error');error=1;}
+if($('#MemberEmail').val()==''){$('#MemberEmail').parent().parent().addClass('has-error');error=1;}
+if((!isValidEmailAddress($('#MemberEmail').val()))){$('#MemberEmail').parent().parent().addClass('has-error');error=1;}
+if($('#MemberPhone').val()==''){$('#MemberPhone').parent().parent().addClass('has-error');error=1;}
+if($('#MemberPassword').val()==''){$('#MemberPassword').parent().parent().addClass('has-error');error=1;}
+if($('#MemberConfirmPassword').val()==''){$('#MemberConfirmPassword').parent().parent().addClass('has-error');error=1;}
+if($('#MemberPassword').val()!=$('#MemberConfirmPassword').val()){$('#MemberConfirmPassword').parent().parent().addClass('has-error');error=1;}
+if($('#g-recaptcha-response').val()==''){error=1;}
+if(error==1){$('#memeber_register_error').removeClass('hidden')}
+if(error==0){$('#regiter_load_img').removeClass('hidden');$.ajax({type:"POST",dataType:'json',url:"/users/register_post",data:$('#MemberRegisterForm').serialize(),success:function(data){$('#regiter_load_img').addClass('hidden');if(data>0){$('#memeber_register_error').addClass('hidden');location.href='/';}else if(data=='-1'){$('#memeber_register_error').removeClass('hidden');}else{$('#memeber_register_error').removeClass('hidden')}}});}}
+function isValidEmailAddress(emailAddress){var pattern=new RegExp(/^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i);return pattern.test(emailAddress);}
+function user_login(){error=0;$(".has-error").each(function(index,element){$(this).removeClass('has-error');});$('#memeber_login_error').addClass('hidden');if($('#UserEmail').val()==''){$('#UserEmail').parent().parent().addClass('has-error');error=1;}
+if($('#UserPassword').val()==''){$('#UserPassword').parent().parent().addClass('has-error');error=1;}
+if(error==1){$('#memeber_login_error').removeClass('hidden');}
+if(error==0){$('#login_load_img').removeClass('hidden');$.ajax({type:"POST",dataType:'json',url:"/users/login_post",data:$('#UserLoginForm').serialize(),success:function(data){$('#login_load_img').addClass('hidden');if(typeof data.id!='undefined'){if(data.id!=0){$('#memeber_login_error').addClass('hidden');location.href=data.url;}else{$('#memeber_login_error').removeClass('hidden');}}else{$('#memeber_login_error').removeClass('hidden');}}});}}
+function popitup(url){newwindow=window.open(url,'name','directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=no,height=400,width=550');if(window.focus){newwindow.focus()}
+return false;}
+function set_register_user_type(type_id){if(type_id==4){$('#pulisher_company_section').removeClass('hidden');}else{$('#pulisher_company_section').addClass('hidden');}}
+function fancybox_close(type){if(type=='normal'){$.fancybox.close();}}
+function add_to_cart(id){quantity=$('#product-quantity').val();if(quantity===undefined){quantity=1;}
+$.fancybox({type:'ajax',href:"/books/add_to_cart/"+id+'/'+quantity});}
+function remove_cart_items(item_id){$.ajax({type:"GET",dataType:'html',url:"/books/remove_cart_item/"+item_id,success:function(data){$('#h_cart_id_'+item_id).remove();}});}
+function set_order_login_type(value){if(value=='guest'){$('#order_login').hide();$('#order_type').show();}else{$('#order_login').show();$('#order_type').hide();}}
+function change_district(type){if(type==1){district_id=$('#UserState').val();}else{district_id=$('#OrderStates').val();}
+if(district_id!=''){$.ajax({type:"GET",dataType:'html',url:"/users/change_discrict/"+district_id+'/'+type,success:function(data){$('#selected_areas').html(data);}});}}
+function change_country(type){if(type==1){country_id=$('#UserState').val();}else{country_id=$('#OrderCountry').val();}
+$.ajax({type:"GET",dataType:'html',url:"/users/change_country/"+country_id+'/'+type,success:function(data){$('#state_city').html(data);}});}
+function order(){error=0;$(".has-error").each(function(index,element){$(this).removeClass('has-error');});$('#memeber_login_error').addClass('hidden');if($('#OrderName').val()==''){$('#OrderName').parent().parent().addClass('has-error');error=1;}
+if($('#OrderPhone').val()==''){$('#OrderPhone').parent().parent().addClass('has-error');error=1;}
+if($('#OrderAddress').val()==''){$('#OrderAddress').parent().parent().addClass('has-error');error=1;}
+if(error==1){$('#memeber_login_error').removeClass('hidden');}
+if(error==0){$('#regiter_load_img').removeClass('hidden');$.ajax({type:"POST",dataType:'json',url:"/orders/order_post",data:$('#OrderSteptwoForm').serialize(),success:function(data){$('#regiter_load_img').addClass('hidden');location.href=data.url;}});}}
+function show_credit_card_options(option){$(".option_credit_card").each(function(index,element){$(this).removeClass('active');});$('#payment_option').val(option);$('#m_'+option).addClass('active');$('#card_payment_option').hide();$('#mobile_payment_option').hide();$('#cash_payment_option').hide();if(option==1){$('#cash_payment_option').show();}
+else if(option==2){$('#card_payment_option').show();}else if(option==3){$('#mobile_payment_option').show();}}
+function payment_order(){if($('#policy').is(':checked')){return true;}else{return false;}
+return true;}
+function send_sms(order_id){$.ajax({type:"POST",dataType:'jsonp',url:"/payments/order_sms/"+order_id,success:function(data){}});}
+function show_feedback(){if($('.fedbackcontainer').css('display')=='none'){$('.fedbackcontainer').show();$('.feedback h4').hide();}else{$('.fedbackcontainer').hide();}}
+function send_feedback(){error=0;if($('#feedback_name').val()==''){$('#feedback_name').parent().addClass('has-error');error=1;}else{$('#feedback_name').parent().removeClass('has-error');}
+if(error==0){$.ajax({type:"POST",dataType:'json',data:$('#feedback_form').serialize(),url:"/pages/send_feedback/",success:function(data){}});$.fancybox.close();}}
+function hide_feedback(){$.fancybox.close()}
+function submit_notes(){error=0;if($('#n_name').val()==''){$('#n_name').parent().addClass('has-error');error=1;}else{$('#n_name').parent().removeClass('has-error');}
+if($('#n_review').val()==''){$('#n_review').parent().addClass('has-error');error=1;}else{$('#n_review').parent().removeClass('has-error');}
+if(error==0){$.ajax({type:"POST",dataType:'html',data:$('#review_notes').serialize(),url:"/books/notes_post/",success:function(data){$("#all_reviews").append(data);$('#n_review').val('');}});}}
+function load_books_bundles(book_id){$.ajax({url:'/books/book_bundles/'+book_id,dataType:'html',success:function(data){$('#books_bunded').html(data);}});}
+function show_related_books(book_id){$.ajax({url:'/books/related_books/'+book_id,dataType:'html',success:function(data){$('.related_loader_img').hide();$('.related_books').html(data);}});}
